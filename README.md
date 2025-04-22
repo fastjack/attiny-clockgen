@@ -11,10 +11,12 @@ $$ f = \frac{f_{CPU}}{2 \times \text{prescaler} \times (\text{OCR0A} + 1)} $$
 ### For 50 Hz @ 1 MHz (PB1 HIGH):
 
 $$ \text{OCR0A} = \frac{1 \text{ MHz}}{2 \times 64 \times 50} - 1 = 155 $$
+
 Actual: 50.08 Hz \[+0.16%\]
 
 ### For 60 Hz @ 1 MHz (PB1 LOW):
 $$ \text{OCR0A} = \frac{1 \text{ MHz}}{2 \times 64 \times 60} -1 = 129 $$
+
 Actual: 60.1 Hz \[+0.17%\]
 
 ## Timer/Prescaler values
