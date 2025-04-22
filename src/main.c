@@ -2,6 +2,7 @@
 
 int main(void) {
     DDRB |= (1 << PB0);   // Set PB0 (OC0B) as output
+    DDRB &= ~(1 << PB1);  // Set PB1 as input
 
     // Configure Timer0 for Fast PWM mode with TOP=OCR0A
     TCCR0A = (1 << COM0B1) | (1 << WGM01) | (1 << WGM00);
